@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "eagles_backend": {
+      "candid": "src/eagles_backend/eagles_backend.did",
+      "package": "eagles_backend",
+      "type": "rust"
+    },
+    "eagles_frontend": {
+      "dependencies": [
+        "eagles_backend"
+      ],
+      "source": [
+        "src/eagles_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "eagles_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
